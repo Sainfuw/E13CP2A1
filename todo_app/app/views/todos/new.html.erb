@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Nuevo ToDo</h1>
+</div>
+<div class="row">
+  <div class="col-md-4" style="margin: auto">
+    <%= form_with(model: @todo, local: true) do |f| %>
+      <div class="field">
+        <%= f.label :description, "Descripcion" %>
+        <%= f.text_field :description, class: 'form-control' %>
+      </div><br>
+      <div class="actions">
+        <%= f.submit "Enviar", class: 'btn btn-success form-control' %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,8 +1,19 @@
-
 <%- @todos.each do |todo| %>
   <div class="well" style="background-color:<%= 'lightgreen' if todo.completed %>">
-    <%= todo.description %>
-    <%= link_to 'Mostrar', todo, class:'btn btn-primary pull-right' %>
+    <div class="row">
+      <div class="col-md-9">
+        <%= todo.description %>
+      </div>
+      <div class="col-md-1">
+        <%= link_to 'Mostrar', todo, class:'btn btn-primary form-control' %>
+      </div>
+      <div class="col-md-1">
+        <%= link_to 'Editar', edit_todo_path(todo), class:'btn btn-success form-control' %>
+      </div>
+      <div class="col-md-1">
+
+      </div>
+    </div>
   </div>
 <% end %>
 <%= link_to "Crear ToDo", todos_new_path, class: "btn btn-success form-control" %>

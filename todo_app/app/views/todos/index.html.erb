@@ -8,10 +8,10 @@
         <%= link_to 'Mostrar', todo, class:'btn btn-primary form-control' %>
       </div>
       <div class="col-md-1">
-        <%= link_to 'Editar', edit_todo_path(todo), class:'btn btn-success form-control' %>
+        <%= link_to 'Editar', edit_todo_path(todo), class:'btn btn-warning form-control' %>
       </div>
       <div class="col-md-1">
-
+        <%= link_to 'Borrar', todo, method: :delete, class:'btn btn-danger form-control' %>
       </div>
     </div>
   </div>

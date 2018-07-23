@@ -1,0 +1,18 @@
+<div class="container text-center">
+  <h1>Lista de ToDos</h1>
+</div>
+<div class="row">
+  <div class="col-md-6 text-center">
+    <h3>Incompletos</h3>
+    <% @incompletos.each do |i| %>
+      <p><%= i %></p>
+    <% end %>
+  </div>
+  <div class="col-md-6 text-center">
+    <h3>Completados</h3>
+    <% @completos.each do |i| %>
+      <p><%= i %></p>
+    <% end %>
+  </div>
+
+</div>

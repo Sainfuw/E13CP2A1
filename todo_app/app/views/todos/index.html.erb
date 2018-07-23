@@ -6,19 +6,19 @@
       </div>
       <% unless todo.completed %>
         <div class="col-md-1">
-          <%= link_to 'Completar', complete_todo_path(todo), class:'btn btn-success' %>
+          <%= link_to 'Listo', complete_todo_path(todo), class:'btn btn-success button' %>
         </div>
       <% end %>
       <div class="col-md-1">
-        <%= link_to 'Mostrar', todo, class:'btn btn-primary' %>
+        <%= link_to 'Mostrar', todo, class:'btn btn-primary button' %>
       </div>
       <div class="col-md-1">
-        <%= link_to 'Editar', edit_todo_path(todo), class:'btn btn-warning' %>
+        <%= link_to 'Editar', edit_todo_path(todo), class:'btn btn-warning button' %>
       </div>
       <div class="col-md-1">
-        <%= link_to 'Borrar', todo, method: :delete, class:'btn btn-danger' %>
+        <%= link_to 'Borrar', todo, method: :delete, class:'btn btn-danger button' %>
       </div>
     </div>
   </div>
 <% end %>
-<%= link_to "Crear ToDo", todos_new_path, class: "btn btn-success" %>
+<%= link_to "Crear ToDo", todos_new_path, class: 'btn btn-success btn-block' %>

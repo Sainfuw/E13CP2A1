@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ .button {
+     min-width: 80px;
+     max-width: 80px;
+ }

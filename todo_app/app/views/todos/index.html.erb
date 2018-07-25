@@ -4,11 +4,11 @@
       <div class="col-md-8">
         <%= todo.description %>
       </div>
-      <% unless todo.completed %>
-        <div class="col-md-1">
+      <div class="col-md-1">
+        <% unless todo.completed %>
           <%= link_to 'Listo', complete_todo_path(todo), class:'btn btn-success button' %>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
       <div class="col-md-1">
         <%= link_to 'Mostrar', todo, class:'btn btn-primary button' %>
       </div>

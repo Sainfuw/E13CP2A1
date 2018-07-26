@@ -1,18 +1,37 @@
-<div class="container text-center">
+<div class="container text-center air">
   <h1>Lista de ToDos</h1>
 </div>
 <div class="row">
-  <div class="col-md-6 text-center">
-    <h3>Incompletos</h3>
-    <% @incompletos.each do |i| %>
-      <p><%= i %></p>
-    <% end %>
+  <div class="col-md-6">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th class="text-center">No Completados</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @incompletos.each do |i| %>
+          <tr>
+            <td><p><%= i %></p></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
-  <div class="col-md-6 text-center">
-    <h3>Completados</h3>
-    <% @completos.each do |i| %>
-      <p><%= i %></p>
-    <% end %>
+  <div class="col-md-6 text-right">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th class="text-center">Completados</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @completos.each do |i| %>
+          <tr>
+            <td><p><%= i %></p></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
-
 </div>

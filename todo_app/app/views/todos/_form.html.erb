@@ -6,7 +6,9 @@
     <%= form_with(model: @todo, local: true) do |f| %>
       <div class="field">
         <%= f.label :description, "Descripcion" %>
-        <%= f.text_field :description, class: 'form-control' %>
+        <%= f.text_field :description, class: 'form-control air' %>
+        <%= f.label :completed, "Completado?  " %>
+        <%= f.check_box :completed %>
       </div><br>
       <div class="actions">
         <%= f.submit "Enviar", class: 'btn btn-success form-control' %>
